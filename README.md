@@ -4,3 +4,5 @@
 
 ## Chapters Currently Being Studied
 - **Object-Oriented Programming Paradigm**
+- **Scheme**
+- **SQL**
