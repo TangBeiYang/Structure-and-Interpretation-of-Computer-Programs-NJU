@@ -3,7 +3,7 @@ class Account:
     def __init__(self,name,password):
         self.name=name
         self.password=password
-        self.__balance=0
+        self.__balance=0                    #Encapsulation:不能直接通过Account.__balance调用
     def get_money(self,money,password):
         if self.password==password:
             self.__balance+=money
@@ -23,9 +23,9 @@ class Account:
             return self.__balance
         else:
             return 'Error'
-    def what_class(self,):
+    def what_class(self):
         print('nothing')
-class AccountWechat(Account):
+class AccountWechat(Account):                #inheritance:继承了Account中的东西
     def what_class(self):
         print('wechat')
         super().what_class()
@@ -39,6 +39,7 @@ b=AccountZhifubao('yfy')
 a.what_class()
 b.what_class()
 b.whatclass()
+
 
 
 
