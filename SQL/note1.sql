@@ -8,7 +8,7 @@
 -- ============================================
 /*声明式编程 vs 命令式编程：
 
-命令式编程(C,python) (Imperative):
+命令式编程(C,python,scheme) (Imperative):
 - 告诉计算机"如何"完成任务
 - 包含明确的执行指令
 - 示例：遍历数组、条件判断、循环等
@@ -89,6 +89,7 @@ SELECT "eisenhower", "fillmore";
 /*
 SELECT语句完整语法：
 SELECT [columns] FROM [table] WHERE [condition] ORDER BY [order] [ASC(升序)/DESC(降序)] LIMIT [number]; */
+-- 没有group操作
 
 -- 4.1 从现有表中选择
 -- 选择所有列
