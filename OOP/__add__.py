@@ -22,6 +22,7 @@ class Ratio:
     def __radd__(self, other):
         return self.__add__(other)
     def __float__(self):
+        #把Ratio类转换成float类
         return float(self.number/self.demon)
 a=Ratio(1,2)
 b=Ratio(1,6)
